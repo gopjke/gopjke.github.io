@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="c:\Users\User\Desktop\сайт\registration style.css">
+</head>
+<body>
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <p>Здесь вы найдете всю необходимую информацию и сможете ознакомиться с нашими услугами.</p>
+
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <!-- Добавьте больше изображений по мере необходимости -->
+    </div>
+
+    <h2>Форма регистрации участников конференции</h2>
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="fullName">Полное имя (Фамилия, Имя, Отчество):</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Контактный телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Адрес электронной почты:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="section">Список с секциями конференции:</label>
+            <select id="section" name="section" required>
+                <option value="математика">Математика</option>
+                <option value="физика">Физика</option>
+                <option value="информатика">Информатика</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Дата рождения:</label>
+            <input type="date" id="birthDate" name="birthDate">
+        </div>
+        <div class="form-group">
+            <label for="presentation">Доклад:</label>
+            <input type="checkbox" id="presentation" name="presentation">
+            <input type="text" id="presentationTopic" name="presentationTopic" placeholder="Тема доклада" style="display: none;">
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <script src="c:\Users\User\Desktop\сайт\registration script.js"></script>
+</body>
+</html>

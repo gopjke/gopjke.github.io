@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!--фон страницы-->
+<style>
+        body {
+            background-image: url("09.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(16, 2, 2); /* Для лучшей читаемости текста поверх фона */
+            font-family: Arial, sans-serif;
+        }
+       
+ </style>
+<!--Горозонтальное меню -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальное меню и фотогалерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+       <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="registration2.html">Регистрация</a></li>
+    <li><a href="participants.html">Список участников</a></li>
+    <li><a href="gallery.html">Фотогалерея</a></li>
+    <li><a href="entrance.html">Вход</a></li>
+
+    <!-- заголовок и текст -->
+</ul>
+    </nav>
+
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <p>Здесь вы найдете всю необходимую информацию и сможете ознакомиться с нашими услугами.</p>
+</body>
+</html>
+
+<!--форма Регистрации-->
+<div class="container">
+    <form id="registrationForm" method="post" action="#">
+        <h2>Регистрация участников конференции</h2>
+
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Фамилия Имя Отчество">
+
+        <label for="phoneNumber">Телефон:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^\+7\d{10}$" required placeholder="+7XXXXXXXXXX">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.ru">
+
+        <label for="section">Выберите секцию:</label>
+        <select id="section" name="section" required>
+            <option value="">-- Выберите секцию --</option>
+            <option value="mathematics">Математика</option>
+            <option value="physics">Физика</option>
+            <option value="informatics">Информатика</option>
+        </select>
+
+        <label for="birthDate">Дата рождения:</label>
+        <input type="date" id="birthDate" name="birthDate">
+
+        <label>
+        Есть доклад?
+            <input type="checkbox" id="hasPresentation" name="hasPresentation">
+        </label>
+
+        <!-- Скрытая область для темы доклада -->
+        <div id="presentationTopicContainer" hidden>
+            <label for="presentationTopic">Тема доклада:</label>
+            <textarea id="presentationTopic" name="presentationTopic"></textarea>
+        </div>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<!--скрипт обработки события смены чекбокса -->
+<script>
+document.getElementById('hasPresentation').addEventListener('change', function() {
+    var presentationTopicContainer = document.getElementById('presentationTopicContainer');
+    
+    if(this.checked) { // Если чекбокс отмечен
+        presentationTopicContainer.hidden = false; // Показываем контейнер с темой доклада
+    } else { // Иначе скрываем обратно
+        presentationTopicContainer.hidden = true;
+    }
+});
+</script>
+
+<!--футер-->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h6>Контакты</h6>
+                <p>
+                    Адрес: г. Москва, ул. Тверская, д. 1<br>
+                    Телефон: +7 (495) 123-45-67<br>
+                    Email: info@example.com
+                </p>
+            </div>
+            
+            <div class="col-md-6 col-md-push-6 col-sm-12">
+                <h6>Социальные сети</h6>
+                <ul class="social-icons">
+                    <li><a href="#" target="_blank"><img src="c" alt="vk.jpg"/></a></li>
+                    <li><a href="#" target="_blank"><img src=" alt="Twitter"/></a></li>
+                    <li><a href="#" target="_blank"><img :\Users\User\Desktop\сайт\Pages\vk.jpgsrc="icons/youtube.png" alt="YouTube"/></a></li>
+                    <li><a href="#" target="_blank"><img src="9.jpg" alt="Viber"/></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr/>
+        
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <p class="copyright-text">Copyright © 2025 Все права защищены | Сайт разработан командой XYZ</p>
+            </div>
+        </div>
+    </div>
+</footer>

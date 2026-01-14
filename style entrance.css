@@ -1,0 +1,96 @@
+/* Основные настройки шрифтов и отступов */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d82396;
+}
+
+/* Оформление шапки и навигации */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li a {
+    color: rgb(213, 207, 207);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    background-color: #efebeb;
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Центровка заголовка */
+#auth h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стилизация меток форм */
+#loginForm label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Контейнер для централизации всей формы */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* высота равна высоте экрана */
+}
+
+/* Оформление полей ввода */
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 20%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Кнопка входа */
+#loginForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Эффект кнопки при наведении */
+#loginForm button:hover {
+    opacity: 0.8;
+}
+/* Адаптация формы входа под мобильные устройства */
+@media only screen and (max-width: 600px) {
+    main section {
+        padding: 20px;
+    }
+}
