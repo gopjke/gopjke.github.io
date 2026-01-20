@@ -1,0 +1,66 @@
+</html><!DOCTYPE html>
+<html lang="ru">
+<head>
+<!-- фон -->
+ <style>
+        body {
+            background-image: url("фон.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(12, 11, 11); 
+            font-family: Arial, sans-serif;
+        }
+       
+ </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт с формой входа</title>
+    <link rel="stylesheet" href="registration2 style.css">
+</head>
+<body>
+    <!-- Шапка сайта с меню -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="registration2.html">Регистрация</a></li>
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="gallery.html">Фотогалерея</a></li>
+                <li><a href="entrance.html">Вход</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h2>Авторизация</h2>
+    <form id="loginForm" action="/messages" method="post">
+        <div class="input-group">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username" required autofocus>
+        </div>
+        <div class="input-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="rememberMe" name="rememberMe">
+            <label for="rememberMe">Автоматически входить при следующем визите</label>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
+</div>
+<script src="script entrance.js"></script>
+</body>
+</html>

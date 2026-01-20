@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration2 style.css">
+</head>
+<!--фон страницы-->
+<style>
+        body {
+            background-image: url("фон рег.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(12, 11, 11); 
+            font-family: Arial, sans-serif;
+        }
+       
+ </style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="registration2.html">Регистрация</a></li>
+            <li><a href= "test.html">Тест</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="entrance.html">Вход</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="login">Логин:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="saveData">Сохранить данные:</label>
+                <input type="checkbox" id="saveData" name="saveData">
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="registration2script.js"></script>
+</body>
+</html>

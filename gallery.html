@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фотогалерея</title>
+    <style>
+        
+    body {
+        background-image: url("фон гал .jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #130f0f; 
+        font-family: 'Times New Roman', serif; 
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+</style>
+    
+
+</head>
+
+</style>
+<!--Горозонтальное меню -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальное меню и фотогалерея</title>
+    <link rel="stylesheet" href="galerystyle.css">
+</head>
+<body>
+    <nav class="menu">
+       <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="registration2.html">Регистрация</a></li>
+    <li><a href="test.html">Тест</a></li>
+    <li><a href="gallery.html">Фотогалерея</a></li>
+    <li><a href="entrance.html">Вход</a></li>
+      
+
+    <!-- заголовок и текст -->
+</ul>
+    </nav>
+    <title>Наши конференции</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 1.9em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-image: linear-gradient(to right, #4c7fee, #d7d7e4);
+            color: rgb(16, 12, 12);
+        }
+    </style>
+</head>
+<body>
+    <h1>Наши конференции
+         </h1>
+</body>
+
+     <!-- Галерея -->
+    <div class="gallery-container">
+        
+        <a href="#" onclick="openModal('photo1')" class="gallery-item">
+            <img src="i (1).jpg" alt="Конференция математика">
+            <div class="caption">Конференция математика</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="auditorium-meeting-audience-meal-conference-event-725049-pxhere.com.jpg" alt="Знаменитость №2">
+            <div class="caption">Аудитория</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="6908b0ca4f33c388603558.jpg" alt="Кодируем будущее, вычисляем настоящее!">
+            <div class="caption">Кодируем будущее, вычисляем настоящее!</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="BI-announcemnt.jpg" alt="Конференция физика">
+            <div class="caption">Конференция физика</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="i (2).webp" alt="Конференция информатика">
+            <div class="caption">Конференция информатика</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="i (4).webp" alt="Размышляя глобально, действуя локально.">
+            <div class="caption">Размышляя глобально, действуя локально.</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="ludi-prinimausie-ucastie-v-meropriatii-s-vysokim-protokolom (1).jpg" alt="Вычисления ведут к открытиям.">
+            <div class="caption">Вычисления ведут к открытиям.</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="i (6).webp" alt="Алгоритмы будущего начинаются здесь.">
+            <div class="caption">Алгоритмы будущего начинаются здесь.</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="ludi-prinimausie-ucastie-v-delovom-meropriatii.jpg" alt="Когда графики сходятся, а решения находят точку равновесия!">
+            <div class="caption">Когда графики сходятся, а решения находят точку равновесия!</div>
+        </a>
+        <a href="#" onclick="openModal('photo2')" class="gallery-item">
+            <img src="i.webp" alt="Вместе мы можем решить любую задачу!">
+            <div class="caption">Вместе мы можем решить любую задачу!</div>
+        </a>
+        
+    </div>
+
+    <!-- Скрытое модальное окно -->
+    <div id="myModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">×</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <script src="galeryscript.js"></script>
+</body>
+</html>

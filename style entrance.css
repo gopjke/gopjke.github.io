@@ -1,0 +1,93 @@
+/* Основные настройки шрифтов и отступов */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 100vh;               
+    background-color: #f0f0f0;   
+    }
+
+.container {
+    width: 350px;
+    padding: 30px;
+    background-color: #d17474;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+     
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.checkbox-container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-container label {
+    user-select: none;
+}
+
+ /* Адаптация */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; 
+    }
+
+    nav ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    nav li {
+        margin: 5px; 
+    }
+}
+
+/* Изменение внешнего вида на экранах меньше 400 пикселей */
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%; }
+    }

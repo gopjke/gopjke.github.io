@@ -1,0 +1,202 @@
+<style>
+    body {
+        background-image: url("фон2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #130f0f; 
+        font-family: 'Times New Roman', serif; 
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+</style>
+</head>
+<body>
+
+</body>
+</html>
+
+<!--Горозонтальное меню -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Горизонтальное меню и фотогалерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+       <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="registration2.html">Регистрация</a></li>
+    <li><a href="test.html">Тест</a></li>
+    <li><a href="gallery.html">Фотогалерея</a></li>
+    <li><a href="entrance.html">Вход</a></li>
+    <li><a href="#" onclick="openContactForm()">Связаться с нами</a></li>
+<!--сообщение -->
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!-- Формы отправки сообщений -->
+<div id="contactForm">
+        <h2></h2>
+        
+        <form id="contactFormSubmit" method="post" action="#">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Ваш email">
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required placeholder="Введите ваше сообщение"></textarea>
+
+            <div class="button-container">
+            <button type="button" onclick="closeContactForm()">Закрыть</button>
+            <button type="submit">Отправить</button>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        function openContactForm() {
+            document.getElementById('contactForm').style.display = 'block';
+        }
+
+        function closeContactForm() {
+            document.getElementById('contactForm').style.display = 'none';
+        }
+        </script>
+
+
+   <!-- заголовок и текст -->
+</ul>
+    </nav>
+
+    <h1>Добро пожаловать!</h1>
+    <p>                       
+                 Уважаемые ученые, преподаватели и студенты!
+ Мы рады пригласить вас на международную научную конференцию, посвящённую современным
+          проблемам  математики,физики и информатики.
+                Программа мероприятия включает доклады по следующим направлениям:
+                  1.Современные тенденции в математике и её приложениях.
+                  2.Новые открытия и направления исследований в физике.
+                  3.Инновационные подходы и методы в области информатики и компьютерных наук.
+              Каждый участник сможет поделиться своими результатами, вступить в диалог с ведущими 
+              специалистами и установить новые научные контакты.
+        Присоединяйтесь к нашему сообществу исследователей и внесите вклад в развитие фундаментальных наук!
+         Регистрация доступна на официальном сайте конференции.
+                     Добро пожаловать на нашу конференцию!
+                                </p>
+
+
+</body>
+
+</html>
+
+<!--форма Регистрации-->
+<div class="container">
+    <form id="registrationForm" method="post" action="#">
+        <h2>Регистрация участников конференции</h2>
+
+        <label for="fullName">ФИО:</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Фамилия Имя Отчество">
+
+        <label for="phoneNumber">Телефон:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^\+7\d{10}$" required placeholder="+7XXXXXXXXXX">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.ru">
+
+        <label for="section">Выберите секцию:</label>
+        <select id="section" name="section" required>
+            <option value="">-- Выберите секцию --</option>
+            <option value="mathematics">Математика</option>
+            <option value="physics">Физика</option>
+            <option value="informatics">Информатика</option>
+        </select>
+
+        <label for="birthDate">Дата рождения:</label>
+        <input type="date" id="birthDate" name="birthDate">
+
+        <label>
+        Есть доклад?
+            <input type="checkbox" id="hasPresentation" name="hasPresentation">
+        </label>
+
+        <!-- Скрытая область для темы доклада -->
+        <div id="presentationTopicContainer" hidden>
+            <label for="presentationTopic">Тема доклада:</label>
+            <textarea id="presentationTopic" name="presentationTopic"></textarea>
+        </div>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+<!--скрипт обработки события смены чекбокса -->
+<script>
+document.getElementById('hasPresentation').addEventListener('change', function() {
+    var presentationTopicContainer = document.getElementById('presentationTopicContainer');
+    
+    if(this.checked) { 
+        presentationTopicContainer.hidden = false; 
+    } else { 
+        presentationTopicContainer.hidden = true;
+    }
+});
+</script>
+
+<!--футер-->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h6>Контакты</h6>
+                <p>
+                    Адрес: г. Москва, ул. Тверская, д. 1<br>
+                    Телефон: +7 (495) 123-45-67<br>
+                    Email: info@example.com
+                </p>
+            </div>
+            
+            <div class="col-md-6 col-md-push-6 col-sm-12">
+                <h6>Социальные сети</h6>
+                <ul class="social-icons">
+                    <li><a href="https://vk.com/" target="_blank"><img src="vk.jpg"/></a></li>
+                    <li><a href="https://twitter.com/" target="_blank"><img src="tviter.jpg"/></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><img src="yt.jpg"/></a></li>
+                    <li><a href="www.viber.com/ru/" target="_blank"><img src="viber.jpg" alt="Viber"/></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr/>
+        
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <p class="copyright-text">Copyright © 2025 Все права защищены | Сайт разработан командой XYZ</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
